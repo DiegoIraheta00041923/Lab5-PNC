@@ -2,6 +2,7 @@ name: Deploy on Docker Hub
 
 on:
   push:
+    #rama
     branches: [ "main" ]
   workflow_dispatch:
 
