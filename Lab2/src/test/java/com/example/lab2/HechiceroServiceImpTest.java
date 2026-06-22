@@ -27,7 +27,7 @@ public class HechiceroServiceImpTest {
     private HechiceroServiceImplementation hechiceroServiceImp;
 
     @Test
-    void tryCreateHechicero(){
+    public void tryCreateHechicero(){
 
         Hechicero hechicero = new Hechicero();
         hechiceroServiceImp.createHechicero(hechicero);
@@ -35,7 +35,7 @@ public class HechiceroServiceImpTest {
     }
 
     @Test
-    void shouldReturnAllHechiceros(){
+    public void shouldReturnAllHechiceros(){
         List<Hechicero> hechiceros = List.of(
                 new Hechicero(),
                 new Hechicero()
@@ -51,7 +51,7 @@ public class HechiceroServiceImpTest {
     }
 
     @Test
-    void shouldReturnHechiceroWhenExists() {
+    public void shouldReturnHechiceroWhenExists() {
 
         UUID id = UUID.randomUUID();
 
@@ -69,7 +69,7 @@ public class HechiceroServiceImpTest {
     }
 
     @Test
-    void shouldReturnNullWhenHechiceroDoesNotExist() {
+    public void shouldReturnNullWhenHechiceroDoesNotExist() {
 
         UUID id = UUID.randomUUID();
 
@@ -85,7 +85,7 @@ public class HechiceroServiceImpTest {
     }
 
     @Test
-    void shouldUpdateHechicero() {
+    public void shouldUpdateHechicero() {
 
         UUID id = UUID.randomUUID();
 
@@ -109,7 +109,7 @@ public class HechiceroServiceImpTest {
     }
 
     @Test
-    void shouldDeleteAndReturnHechicero() {
+    public void shouldDeleteAndReturnHechicero() {
 
         UUID id = UUID.randomUUID();
 
