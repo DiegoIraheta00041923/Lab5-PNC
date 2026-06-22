@@ -2,9 +2,8 @@ package com.example.lab2;
 
 import com.example.lab2.domain.entity.Hechicero;
 import com.example.lab2.repository.HechiceroRepository;
-import com.example.lab2.service.HechiceroService;
 import com.example.lab2.service.impl.HechiceroServiceImplementation;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
