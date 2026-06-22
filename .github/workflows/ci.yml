@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches: ["develop","main"]
+  pull_request:
+    branches: ["develop","main"]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+
+      - name: Run Tests
+        run: ./mvnw test
+
+      - name: Package
+        run: ./mvnw package
