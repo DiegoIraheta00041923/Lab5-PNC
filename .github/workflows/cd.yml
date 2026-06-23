@@ -22,7 +22,7 @@ jobs:
       - name: Build n push
         uses: docker/build-push-action@v6
         with:
-          context: .
+          context: ./Lab2
           push: true
           tags: |
             ${{ secrets.DOCKER_USERNAME }}/buhosapp:latest
