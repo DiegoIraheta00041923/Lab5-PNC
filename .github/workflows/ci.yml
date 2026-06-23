@@ -23,7 +23,7 @@ jobs:
           java-version: 21
 
       - name: Run Tests
-        run: ./mvnw test
+        run: cd Lab2 && ./mvnw test
 
       - name: Package
-        run: ./mvnw package
+        run: cd Lab2 && ./mvnw package
