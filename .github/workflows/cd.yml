@@ -25,5 +25,5 @@ jobs:
           context: ./Lab2
           push: true
           tags: |
-            ${{ secrets.DOCKER_USERNAME }}/buhosapp:latest
-            ${{ secrets.DOCKER_USERNAME }}/buhosapp:${{ github.sha }}
+            ${{ secrets.DOCKER_USERNAME }}/lab5:latest
+            ${{ secrets.DOCKER_USERNAME }}/lab5:${{ github.sha }}
