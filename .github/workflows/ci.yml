@@ -22,8 +22,14 @@ jobs:
           distribution: temurin
           java-version: 21
 
+      - name: Give permission to Maven Wrapper
+        working-directory: Lab2
+        run: chmod +x mvnw
+
       - name: Run Tests
-        run: cd Lab2 && ./mvnw test
+        working-directory: Lab2
+        run: && ./mvnw test
 
       - name: Package
-        run: cd Lab2 && ./mvnw package
+        working-directory: Lab2
+        run: ./mvnw package
